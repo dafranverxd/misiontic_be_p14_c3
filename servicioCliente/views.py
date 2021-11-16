@@ -8,17 +8,17 @@ from servicioCliente.serializer import PQRSerializer, SoporteSerializer
 
 class SoporteListCreate(generics.ListCreateAPIView):
     queryset = Soporte.objects.all()
-    serializers_class= SoporteSerializer
+    serializer_class= SoporteSerializer
 
 
 class SoporteUpdateDelete(generics.RetrieveUpdateDestroyAPIView):
     queryset = Soporte.objects.all()
-    serializers_class= SoporteSerializer
+    serializer_class= SoporteSerializer
 
 class PQRListCreate(generics.ListCreateAPIView):
     queryset = PQR.objects.all()
-    serializers_class= PQRSerializer 
+    serializer_class= PQRSerializer 
 
 class PQRpdateDelete(generics.RetrieveUpdateDestroyAPIView):
     queryset = PQR.objects.all()
-    serializers_class= PQRSerializer 
+    serializer_class= PQRSerializer 
